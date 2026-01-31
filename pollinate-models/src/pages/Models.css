@@ -1,0 +1,73 @@
+.models-page {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.models-title {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10; 
+}
+
+.hero-m {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.images-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.model-card {
+  text-align: center;
+}
+
+.model-card img {
+  width: 300px; 
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.model-card img:hover {
+  transform: scale(1.05); 
+}
+
+.model-card a {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.model-card a:hover {
+  text-decoration: underline;
+}

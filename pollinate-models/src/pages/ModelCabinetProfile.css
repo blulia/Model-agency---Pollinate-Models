@@ -1,0 +1,81 @@
+.edit-profile-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  background-color: #333; 
+  color: white;
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-profile-button:hover {
+  background-color: #555;
+}
+
+.parameters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  margin-bottom: 16px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+}
+
+.form-group label {
+    margin: 0;
+}
+
+.form-group input {
+    height: 24px;
+}
+
+.buttons-m {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.save-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #386f44;
+  color: #386f44;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #be3501;
+  color: #be3501;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-button:hover {
+  background-color: #386f44;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #be3501;
+  color: #fff;
+}

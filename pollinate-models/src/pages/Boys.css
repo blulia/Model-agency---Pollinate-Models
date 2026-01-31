@@ -1,0 +1,53 @@
+.boys-page {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.boys-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    justify-content: center;
+}
+
+.boy-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: grid;
+}
+
+.boy-card img {
+    width: 225px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.boy-link-img:hover img {
+    transform: scale(1.05); 
+}
+
+.boy-card a {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.boy-link:hover {
+  text-decoration: underline;
+}
+
+.boys-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

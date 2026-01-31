@@ -1,0 +1,87 @@
+.girls-page {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.filters {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.filters label {
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+.filters select {
+    margin-left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.no-results {
+    grid-column: 1 / -1; 
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 40px;
+}
+
+
+.girls-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.girls-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    justify-items: center;
+}
+
+.girl-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: grid;
+}
+
+.girl-card img {
+    width: 225px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.girl-link-img:hover img {
+    transform: scale(1.05); 
+}
+
+.girl-card a {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.girl-link:hover {
+  text-decoration: underline;
+}
+

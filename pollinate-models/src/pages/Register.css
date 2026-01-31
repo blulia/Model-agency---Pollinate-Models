@@ -1,0 +1,147 @@
+.register-page {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 500px;
+}
+
+.logo-register {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.already-have-account {
+    border-radius: 6px;
+    border: 1px solid rgba(14, 23, 28, .15);
+    background: #f4f4f4;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .05);
+    display: flex;
+    width: 500px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    align-items: center;
+    text-align: center;
+}
+
+.account-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.sign-in-button {
+    margin-top: 5px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #ce4618;
+    color: #ce4618;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.sign-in-button:hover {
+    background-color: #ce4618;
+    color: #fff;
+}
+
+.register-container {
+    border-radius: 6px;
+    border: 1px solid rgba(14, 23, 28, .15);
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .05);
+    display: flex;
+    width: 500px;
+    padding: 20px;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.register-form label {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.register-form input,
+.register-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.create-account-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #555;
+}
+
+.password-requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.password-requirements li {
+    font-size: 14px;
+}
+
+.password-requirements .valid {
+    color: green;
+}
+
+.password-requirements .invalid {
+    color: red;
+}
+
+.message {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}

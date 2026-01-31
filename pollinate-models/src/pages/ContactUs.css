@@ -1,0 +1,32 @@
+.contact-us {
+  font-family: Montserrat, sans-serif;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.contact-us h1 {
+  margin: 32.16px 0px 20px;
+  color: #333;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 10px;
+}
+
+.map-container h2 {
+  color: #333;
+}
+
+.map-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

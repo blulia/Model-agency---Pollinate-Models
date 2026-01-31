@@ -1,0 +1,16 @@
+.open-chat-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-top: 5px;
+    background-color: #333; /* темний фон, як ти хотіла */
+    color: white;
+    border: none; /* або можна додати свій border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.open-chat-btn:hover {
+    background-color: #555;
+}

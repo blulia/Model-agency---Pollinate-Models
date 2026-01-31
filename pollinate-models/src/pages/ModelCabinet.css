@@ -1,0 +1,141 @@
+.model-cabinet {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.no-session {
+    margin: 0px 0px 20px 20px;
+}
+
+.no-session p {
+    font-size: 18px;
+    color: #333;
+}
+
+.model-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.model-header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+}
+
+.sessions {
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.sessions h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.sessions p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: justify;
+}
+
+.sessions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0px 20px 20px 20px;
+}
+
+.session-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s ease;
+}
+
+.sessions-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.sessions-container p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.sessions-header {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.sessions-header h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.status {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    
+  }
+  
+  .status-accepted {
+    background-color: #d4edda;
+    color: #386f44;
+    margin-left: 70px;
+  }
+  
+  .status-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+    margin-left: 80px;
+  }
+  
+  .status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    margin-left: 35px;
+  }  
+
+.submit-app {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-app:hover {
+    background-color: #555;
+}
+
+.profile-link {
+    display: inline;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
