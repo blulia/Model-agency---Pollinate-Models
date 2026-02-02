@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Aplikacja webowa agencji modelingowej - Pollinate Models
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis projektu
+Projekt stanowi autorską aplikację webową wspierającą funkcjonowanie agencji modelingowej.
+System umożliwia zarządzanie użytkownikami o różnych rolach (administrator, modelka, fotograf), obsługę profili użytkowników, zgłoszeń do sesji fotograficznych oraz komunikację pomiędzy uczestnikami systemu za pomocą czatu w czasie rzeczywistym.
 
-## Available Scripts
+Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem nowoczesnych technologii webowych, co zapewnia bezpieczeństwo danych, przejrzystość struktury oraz możliwość dalszego rozwoju systemu.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Wykorzystane technologie
+- **Frontend:** React, HTML5, CSS3, JavaScript (ES6+)
+- **Backend:** Node.js, Express.js
+- **Baza danych:** MySQL
+- **Autoryzacja:** JWT (JSON Web Token)
+- **Przesyłanie plików:** Multer
+- **Komunikacja w czasie rzeczywistym:** Socket.io
+- **Kontrola wersji:** Git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Wymagania systemowe
+Aby uruchomić aplikację na nowym komputerze, należy zainstalować:
 
-### `npm test`
+- **Node.js** (wersja LTS)
+- **npm** (instalowany razem z Node.js)
+- **MySQL Server**
+- **MySQL Workbench**
+- **Przeglądarka internetowa** (Chrome, Firefox lub Edge)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Instalacja wymaganych narzędzi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Instalacja Node.js i npm
+Pobrać i zainstalować Node.js z oficjalnej strony: https://nodejs.org 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Sprawdzenie poprawności instalacji:
+```bash
+node -v
+npm -v
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 2. Instalacja MySQL
+Zainstalować MySQL Server oraz MySQL Workbench z oficjalnej strony: https://dev.mysql.com/downloads/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Podczas instalacji należy zapamiętać:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- nazwę użytkownika (np. root)
+- hasło do bazy danych
+- port (domyślnie 3306)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Instalacja zależności projektu
+W katalogu głównym projektu przejść do folderu `pollinate-models`, a następnie uruchomić w nim terminal i wykonać:
+```bash
+cd pollinate-models
+npm install
+```
 
-## Learn More
+Polecenie instaluje wszystkie zależności wymagane do uruchomienia aplikacji frontendowej i backendowej.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Uruchomienie aplikacji
 
-### Code Splitting
+### 1. Uruchomienie części frontendowej (React)
+W katalogu projektu:
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Aplikacja frontendowa będzie dostępna pod adresem:
+```bash
+http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+### 2. Uruchomienie backendu (Node.js)
+W katalogu projektu, w osobnym oknie terminala, uruchomić:
+```bash
+node server.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend odpowiada za:
 
-### Making a Progressive Web App
+- logikę biznesową aplikacji,
+- autoryzację i uwierzytelnianie użytkowników,
+- komunikację z bazą danych,
+- obsługę czatu w czasie rzeczywistym.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Przywracanie bazy danych (MySQL)
+Aby aplikacja mogła poprawnie działać, należy przywrócić bazę danych z pliku kopii zapasowej `backup.sql`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Instrukcja przywracania bazy danych (MySQL Workbench):
+1. Uruchomić MySQL Workbench i połączyć się z serwerem MySQL.
+2. Utworzyć nową bazę danych (np. `pollinate_models`).
+3. Z menu wybrać **Server -> Data Import**.
+4. Zaznaczyć opcję **Import from Self-Contained File** i wskazać plik `backup.sql`.
+5. Wybrać utworzoną bazę danych jako docelową.
+6. Kliknąć **Start Import** i poczekać na zakończenie procesu.
 
-### Deployment
+Po poprawnym imporcie baza danych jest gotowa do pracy z aplikacją.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Uwagi końcowe
+- MySQL Server musi być uruchomiony przed startem backendu, a dane dostępowe do bazy danych muszą być zgodne z konfiguracją w pliku `server.js`.
+- Frontend i backend muszą działać jednocześnie, aby aplikacja funkcjonowała poprawnie.
+- Wszystkie zależności Node.js powinny być zainstalowane w katalogu projektu za pomocą `npm install`. Dotyczy to również **Socket.io**, który odpowiada za komunikację w czasie rzeczywistym między frontendem a backendem.
+- W przypadku problemów z połączeniem lub funkcjonalnością czatu należy upewnić się, że wersja Node.js jest zgodna z wymaganiami projektu oraz że pakiety npm zostały zainstalowane bez błędów.
